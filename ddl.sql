@@ -4,8 +4,9 @@ create table bike(
     id_bike INT AUTO_INCREMENT, /*PK*/
     type_bike VARCHAR(30),
     price DECIMAL,
+    id_store2 INT,
     PRIMARY KEY (id_bike),
-    FOREIGN KEY(id_store) references store(id_store) /*CHECKAR*/
+    FOREIGN KEY(id_store2) references store(id_store) /*CHECKAR*/
 );
 create table store(
     id_store INT AUTO_INCREMENT, /*PK*/
@@ -17,13 +18,17 @@ create table store(
 
 create table contracts(
     number_contract INT AUTO_INCREMENT,
+    id_custom2 INT,
+    id_store2 INT,
+    id_extra2 INT
     start_rent DATE,
     finish_rent DATE,
+    id_insurance2 INT,
     PRIMARY KEY(number_contract),
-    FOREIGN KEY(id_custom) references custom(id_custom),
-    FOREIGN KEY(id_bike) references bike(id_bike),
-    FOREIGN KEY(id_extra) references extra(id_extra),
-    FOREIGN KEY(id_insurance) references insurance(id_insurance)
+    FOREIGN KEY(id_custom2) references custom(id_custom),
+    FOREIGN KEY(id_bike2) references bike(id_bike),
+    FOREIGN KEY(id_extra2) references extra(id_extra),
+    FOREIGN KEY(id_insurance2) references insurance(id_insurance)
 );
 
 create table extra(
