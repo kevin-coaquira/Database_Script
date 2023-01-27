@@ -6,16 +6,16 @@ INSERT INTO store values (3, 'Call&Ride Bike Rental', 'Carrer de Can Puigdorfila
 INSERT INTO store values (4, 'NANO Bicycles', 'Carrer de la Mar, 10, 07012 Palma', '4.0');
 INSERT INTO store values (5, 'Two wheels grab a bike', 'Carrer Menorca, 4, Bajo Izq, 07011 Palma', '2.0');
 /*Bike --> id_bike(PK), type_bike, price, id_store(FK)*/
-INSERT INTO bike values(1, 'urban','120.0',);
-INSERT INTO bike values(2, 'road', '300.0');
-INSERT INTO bike values(3,'triathlon and trial time', '289.0');
-INSERT INTO bike values(4, 'mountain', '196.0');
-INSERT INTO bike values(5, 'bmx', '200.0');
-INSERT INTO bike values(6, 'ride', '290.0');
-INSERT INTO bike values(7, 'hybrid', '500.0');
-INSERT INTO bike values(8, 'road electric', '672.0');
-INSERT INTO bike values(9, 'electric', '500.0');
-INSERT INTO bike values(10, 'gravel', '930.0');
+INSERT INTO bike values(1, 'urban','120.0',1);
+INSERT INTO bike values(2, 'road', '300.0',2);
+INSERT INTO bike values(3,'triathlon and trial time', '289.0',3);
+INSERT INTO bike values(4, 'mountain', '196.0',4);
+INSERT INTO bike values(5, 'bmx', '200.0',5);
+INSERT INTO bike values(6, 'ride', '290.0',3);
+INSERT INTO bike values(7, 'hybrid', '500.0',1);
+INSERT INTO bike values(8, 'road electric', '672.0',2);
+INSERT INTO bike values(9, 'electric', '500.0',4);
+INSERT INTO bike values(10, 'gravel', '930.0',5);
 
 /*Contracts --> id_custom(FK), number_contract(PK),id_bike(FK),id_extra(FK),
 start_rent, finish_rent, id_insurance(FK)*/
