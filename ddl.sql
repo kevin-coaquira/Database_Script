@@ -19,8 +19,8 @@ create table store(
 create table contracts(
     number_contract INT AUTO_INCREMENT,
     id_custom2 INT,
-    id_store2 INT,
-    id_extra2 INT
+    id_bike2 INT, /*Before <code>id_store2</code>, now <code>id_bike2</code>. Modified 31/01/2023 19:25*/
+    id_extra2 INT,  /*A comma is missing here. Modified 31/01/2023 19:26*/
     start_rent DATE,
     finish_rent DATE,
     id_insurance2 INT,
